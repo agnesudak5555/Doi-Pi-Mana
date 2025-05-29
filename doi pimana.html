@@ -1,0 +1,456 @@
+gabung ke sini ya ganti yg bagian beranda dengan diatas: <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doi Pi Mana?</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f6f7f8;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top;
+      min-height: 100vh;
+      padding-top: 5px;
+      color: hsl(0, 0%, 0%);
+    }
+
+    header {
+      background-color: #054a83;
+      color: rgb(243, 244, 245);
+      padding: 0rem;
+      text-align: center;
+    }
+  
+
+    nav {
+      background-color: #033c5e;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem;
+      max-width: 900px;
+      margin: auto;
+      margin-top: 60px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      background-color: #e8e9e9;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th,
+    td {
+      border: 1px solid #02163d;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ecf1f1;
+      color: rgb(2, 76, 126);
+    }
+
+    .keterangan-box {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 50%;
+  height: 150px;  /* bisa disesuaikan */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+}
+    footer {
+      text-align: center;
+      background-color: #045770;
+      color: #fdf9f9;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    form label,
+    form input,
+    form button {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    form input {
+      padding: 8px;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #006475;
+      border-radius: 6px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #006475;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background-color: #b4eff1;
+    }
+
+    /* Fullscreen video background */
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .banner video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+d
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Video Background -->
+  <div class="banner">
+    <video autoplay loop muted playsinline>
+      <source src="Video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <<section id="hero" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 80vh; padding-top: 30px; text-align: center; position: relative; z-index: 1;">
+  <h2 class="section-title" style="color: white; font-size: 3rem; margin-bottom: 1rem;">SELAMAT DATANG</h2>
+  <img src="LOGO 2.png" alt="Logo Doi Pi Mana?" style="height: 270px; margin-bottom: 2rem 0;">
+  <a href="#beranda">
+    <button style="padding: 0.8rem 1.5rem; font-size: 2rem; background-color: #054a83; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      Yuk Mulai Kelola Uangmu
+    </button>
+  </a>
+</section>
+  </a>
+  </section>
+  </section>
+
+
+  <nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#catat-doi"><img src="CATAT .png" alt="Catat Doi" style="height: 24px; vertical-align: middle; margin-right: 6px;">Catat Doi</a>
+  <a href="#tips-trick"><img src="TIPS.png" alt="Tips" style="height: 24px; vertical-align: middle; margin-right: 6px;">Tips & Trick</a>
+  <a href="#berita"><img src="BERITA.png" alt="Berita" style="height: 24px; vertical-align: middle; margin-right: 6px;">Berita Keuangan</a>
+  <a href="#quotes"><img src="KUTIPAN.png" alt="Quotes" style="height: 24px; vertical-align: middle; margin-right: 6px;">Quotes Harian</a>
+  <a href="#kalkulator"><img src="KALKULATOR.png" alt="Kalkulator" style="height: 24px; vertical-align: middle; margin-right: 6px;">Kalkulator</a>
+  <a href="#kisah"><img src="KISAH.png" alt="Kisah" style="height: 24px; vertical-align: middle; margin-right: 6px;">Kisah Inspiratif</a>
+</nav>
+
+
+  <section id="beranda">
+  </a>
+</div>
+  </a>
+    <div class="grid">
+  <div class="card">
+    <img src="CATAT .png" alt="Catat Doi" class="card-img" />
+    <h3>Catat Doi</h3>
+    <p>Cara mudah mencatat pemasukan dan pengeluaran harianmu.</p>
+    <a href="#catat-doi">Selengkapnya</a>
+  </div>
+  <div class="card">
+    <img src="TIPS.png" alt="Tips & Trick" class="card-img" />
+    <h3>Tips & Trick</h3>
+    <p>Pelajari cara mengelola uang dengan bijak dan efektif.</p>
+    <a href="#tips-trick">Selengkapnya</a>
+  </div>
+  <div class="card">
+    <img src="BERITA.png" alt="Berita Keuangan" class="card-img" />
+    <h3>Berita Keuangan</h3>
+    <p>Update informasi ekonomi dari Indonesia dan dunia.</p>
+    <a href="#berita">Selengkapnya</a>
+  </div>
+  <div class="card">
+    <img src="KUTIPAN.png" alt="Quotes Harian" class="card-img" />
+    <h3>Quotes Harian</h3>
+    <p id="daily-quote">Motivasi harian agar semangat atur keuangan!</p>
+    <a href="#quotes">Selengkapnya</a>
+  </div>
+  <div class="card">
+    <img src="KALKULATOR.png" alt="Kalkulator" class="card-img" />
+    <h3>Kalkulator</h3>
+    <p>Hitung cepat pemasukan dan pengeluaranmu.</p>
+    <a href="#kalkulator">Selengkapnya</a>
+  </div>
+  <div class="card">
+    <img src="KISAH.png" alt="Kisah Inspiratif" class="card-img" />
+    <h3>Kisah Inspiratif</h3>
+    <p>Belajar dari para tokoh sukses dalam mengelola keuangan.</p>
+    <a href="#kisah">Selengkapnya</a>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Sisa halaman tetap sama -->
+  <!-- Quotes -->
+  <section id="quotes">
+    <h2 class="section-title">Quotes Harian</h2>
+    <div class="card" style="text-align: center; font-size: 1.2rem;">
+      <p id="quote-display">"Quote loading..."</p>
+    </div>
+  </section>
+
+  <!-- Catat Doi -->
+ <section id="catat-doi">
+  <h2 class="section-title">Catat Doi - Jurnal Keuangan Sederhana</h2>
+  <div class="keterangan-box">
+    <p>Jurnal keuangan sederhana membantu mencatat setiap pemasukan dan pengeluaran secara harian agar kamu bisa memantau keuangan pribadi dengan lebih bijak.</p>
+  </div>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Keterangan</th>
+          <th>Pemasukan (Rp)</th>
+          <th>Pengeluaran (Rp)</th>
+          <th>Total Saldo (Rp)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Gaji Bulanan</td>
+          <td>5.000.000</td>
+          <td>0</td>
+          <td>5.000.000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Belanja Bulanan</td>
+          <td>0</td>
+          <td>1.500.000</td>
+          <td>3.500.000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Transportasi</td>
+          <td>0</td>
+          <td>500.000</td>
+          <td>3.000.000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Freelance</td>
+          <td>1.000.000</td>
+          <td>0</td>
+          <td>4.000.000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Makan Siang</td>
+          <td>0</td>
+          <td>50.000</td>
+          <td>3.950.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tips & Trick -->
+  <section id="tips-trick">
+    <h2 class="section-title">Tips & Trick Mengelola Keuangan</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Buat Anggaran Bulanan</h3>
+        <p>Tentukan alokasi pengeluaran untuk kebutuhan pokok, tabungan, dan hiburan.</p>
+      </div>
+      <div class="card">
+        <h3>2. Hindari Utang Konsumtif</h3>
+        <p>Gunakan kartu kredit dan pinjaman hanya untuk keperluan produktif.</p>
+      </div>
+      <div class="card">
+        <h3>3. Catat Semua Pengeluaran</h3>
+        <p>Membantu melacak uang keluar dan menghindari pemborosan.</p>
+      </div>
+      <div class="card">
+        <h3>4. Sisihkan Dana Darurat</h3>
+        <p>Setidaknya 3-6 bulan pengeluaran untuk menghadapi kondisi tak terduga.</p>
+      </div>
+      <div class="card">
+        <h3>5. Investasi Sejak Dini</h3>
+        <p>Mulai berinvestasi untuk masa depan, bisa dimulai dari reksadana atau emas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Berita -->
+  <section id="berita">
+  <h2 class="section-title">Berita Keuangan Terbaru</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="BI.jpg" alt="BI Pantau Ketat AS & Perang Timur Tengah" class="card-img" />
+      <h3>Bisa Ganggu Rupiah, BI Pantau Ketat AS & Perang di Timur Tengah</h3>
+      <p>Bisa Ganggu Rupiah, BI Pantau Ketat AS & Perang di Timur Tengah.</p>
+      <a href="https://www.cnbcindonesia.com/market/20240522133053-17-540500/bisa-ganggu-rupiah-bi-pantau-ketat-as-perang-di-timur-tengah" target="_blank">Baca Selengkapnya</a>
+    </div>
+    <div class="card">
+      <img src="emas.webp" alt="Investasi Emas Perang Dagang AS" class="card-img" />
+      <h3>Kilau Investasi Emas Kala Perang Dagang AS Kian Memanas</h3>
+      <p>Kilau Investasi Emas Kala Perang Dagang AS Kian Memanas.</p>
+      <a href="https://www.cnbcindonesia.com/market/20250521183045-17-540500/harga-emas-dunia-naik-akibat-ketidakpastian" target="_blank">Baca Selengkapnya</a>
+    </div>
+    <div class="card">
+      <img src="prabowo.jpeg" alt="Proyek Hilirisasi Prabowo" class="card-img" />
+      <h3>18 Proyek Hilirisasi Prabowo Senilai Rp 730 Triliun Segera Dibangun</h3>
+      <p>18 Proyek Hilirisasi Prabowo Segera Dibangun.</p>
+      <a href="https://www.cnbcindonesia.com/news/20250523191416-4-635810/18-proyek-hilirisasi-prabowo-senilai-rp-730-triliun-segera-dibangun" target="_blank">Baca Selengkapnya</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Kalkulator -->
+  <section id="kalkulator">
+    <h2 class="section-title">Kalkulator Keuangan</h2>
+    <form id="calc-form">
+      <label for="income">Pemasukan (Rp):</label>
+      <input type="number" id="income" name="income" required min="0" />
+      <label for="expense">Pengeluaran (Rp):</label>
+      <input type="number" id="expense" name="expense" required min="0" />
+      <button type="submit">Hitung Saldo</button>
+    </form>
+    <p id="result"></p>
+  </section>
+
+  <!-- Kisah Inspiratif -->
+  <section id="kisah">
+  <h2 class="section-title">Kisah Inspiratif Pemilik KFC</h2>
+  <div class="card" style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+    <img src="kfc.jpg" alt="Ray Kroc" style="flex: 1 1 200px; max-width: 200px; border-radius: 12px; object-fit: cover;" />
+    <div style="flex: 2 1 400px; text-align: justify;">
+      <p><strong>Ray Kroc</strong> adalah tokoh di balik kesuksesan KFC. Ia memulai usahanya dengan membeli hak waralaba restoran ayam goreng dari Colonel Sanders pada usia 52 tahun. Dari kisahnya, kita belajar bahwa tidak ada kata terlambat untuk memulai sesuatu yang besar. Konsistensi, inovasi, dan kepercayaan diri menjadi kunci kesuksesan Ray Kroc membangun KFC menjadi jaringan restoran ayam goreng terbesar di dunia.</p>
+      <p><strong>Pelajaran yang bisa diambil:</strong></p>
+      <ul>
+        <li>Jangan takut memulai meskipun usia tidak muda lagi.</li>
+        <li>Ketekunan dan inovasi sangat penting dalam bisnis.</li>
+        <li>Kepercayaan diri dapat membawa peluang besar.</li>
+        <li>Kolaborasi dengan orang lain bisa membuka jalan kesuksesan.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025 Doi Pi Mana? All rights reserved.</p>
+  </footer>
+
+  <script>
+    const quotes = [
+      "Uang bukan segalanya, tapi segalanya butuh uang.",
+      "Jangan menabung apa yang tersisa setelah berbelanja, tapi belanjalah apa yang tersisa setelah menabung.",
+      "Investasi terbaik adalah investasi pada dirimu sendiri.",
+      "Keuangan yang sehat dimulai dari pengelolaan yang disiplin.",
+      "Bekerja keraslah, tapi jangan lupa untuk mengelola uang dengan bijak."
+    ];
+    const quoteDisplay = document.getElementById("quote-display");
+    function showRandomQuote() {
+      const idx = Math.floor(Math.random() * quotes.length);
+      quoteDisplay.textContent = `"${quotes[idx]}"`;
+    }
+    showRandomQuote();
+    setInterval(showRandomQuote, 10000);
+
+    const form = document.getElementById('calc-form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const income = parseFloat(document.getElementById('income').value);
+      const expense = parseFloat(document.getElementById('expense').value);
+      if (isNaN(income) || isNaN(expense)) {
+        result.textContent = 'Mohon masukkan angka yang valid.';
+        return;
+      }
+      const saldo = income - expense;
+      result.textContent = `Saldo Anda: Rp ${saldo.toLocaleString('id-ID')}`;
+    });
+  </script>
+</body>
+</html>
